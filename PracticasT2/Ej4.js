@@ -1,8 +1,15 @@
 'use strict'; /*usar esto para obligar a declarar variables*/
 
-let x = Math.floor(Math.random() * 255);
-let y = Math.floor(Math.random() * 255);
-let z = Math.floor(Math.random() * 255);
+let num;
 
-let color = "rgb(" + x + ", " +  y + ", " + z + ")";
-document.body.style.backgroundColor = color;
+num=prompt('Introduce un número');
+
+if (isNaN(num))
+{
+    alert('El número introducido no es un número');
+}
+else
+{
+    alert('El número introducido es realmente un número');
+}
+
